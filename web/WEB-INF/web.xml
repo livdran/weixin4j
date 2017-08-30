@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <filter>
+        <description>微信消息接入接口</description>
+        <filter-name>WeixinUrlFilter</filter-name>
+        <filter-class>org.weixin4j.WeixinUrlFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>WeixinUrlFilter</filter-name>
+        <url-pattern>/api/weixin4j</url-pattern>
+    </filter-mapping>
+
+</web-app>
